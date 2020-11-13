@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Add your meta description" />
+    <!-- meta tag below is used for Internet Explorer and mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--This means that the browser will (probably) render the width of the page at the width of its own screen. //-->
+    <title>My Blog</title>
+    <!-- add your stylesheet and any other styling code, e.g. google fonts  a good link is https://fonts.google.com/-->
+	
+	<link rel="stylesheet" href="../css/main.css"/> 
+</head>
+
+<!-- all the classes below will require some CSS styles to be included in your layout.css file, if you do not
+include a style for these classes you should remove the class from your html file //-->
+<body>
+    <main class= "main-style">
+     <header class="page-header">  <!-- What does the header do? Replace this comment with a brief explanation. 
+         see nav above-->
+            <div class="header-content">  <!-- What is a div?  Replace this comment with an explanation.-->
+                <a href="#"><h1>Blogforoluwaseun</h1></a>
+            </div>
+        </header>
+	    <!-- You could style Main here if you wish-->
+        <nav class="page-nav"> <!-- the navigation part of the page.  Note links just jump to different parts of the page.-->
+            <ul>
+                <li id="right"><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#work">Work Experience</a></li>
+                <li><a href="#images">Image Gallery</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+       
+    <!--Note here the use of an ID.  the link above actually links to this. 
+         It's a good example of where an ID can be used.  Note also that the section has a class attribute.  use this for styling. -->
+        <section id="about" class="about-me container">  <!--What does the section do here?  Replace this comment with a brief explanation. -->
+            <div class="container-content">
+                <h2>About Me</h2>
+                <div class="content">
+                    <p> I’m Aderibigbe Oluwaseun and I was born on the 19th of August 1988.</p> 
+                    <p> I have 3 siblings and I am the eldest among three brothers. </p> 
+                    <p> I have lived in Nigeria for most part of my life until I moved from Nigeria to Germany in the year 2015 and
+                        I stayed there until we desired to move to an English speaking country and we made up to choose the Rep of Ireland. <br> 
+                        I like spending my free time on different things depending on that particular day and time but
+                        I like watching sport especially soccer as a Manchester United Fan.</p>
+                    <p>As a current student of computer application in DCU, I like watching and doing some coding practical classes <br>
+                        I’m married with 2 children, in fact they are twins and
+                        it has been fun especially with my kids because I broke my ankle, while chasing one of them.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="work-experience container">
+            <div class="container-content">
+                <h2>Work Experience</h2>
+                <div class="content">
+                   
+                </div>        
+            </div>
+        </section>
+				<br><br>
+
+        <section id="images" class="image-gallery container">
+            <div class="container-content">
+                <h2>Image Gallery</h2>
+                <div class="content">
+                    <div class="an-image">
+                        <!-- add image one here with 150 word maximum caption.  
+                            You may remove the caption if you wish.  Don't forget to use alt tags. -->
+                        <div class="image-caption"> </div>
+                    </div>
+                    <div class="an-image">
+                        <!-- add image two here with 150 word maximum caption -->
+                        <div class="image-caption"> </div>
+                    </div>
+                    <div class="an-image">
+                        <!-- add image three here with 150 word maximum caption -->
+                        <div class="image-caption"> </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="container">
+            <div class="container-content">
+                <h2>Contact Me</h2>
+                <div class="content">
+                    <form>
+                        <!-- Style this nicely.  
+                            Don't worry if the form doesn't work, marks here for how well you style it. -->
+                        <div class="row">
+                            <div class="col-25">
+                              <label for="fname">First Name</label>
+                            </div>
+                            <div class="col-75">
+                              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-25">
+                              <label for="lname">Last Name</label>
+                            </div>
+                            <div class="col-75">
+                              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-25">
+                              <label for="subject">Subject</label>
+                            </div>
+                            <div class="col-75">
+                              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <input type="submit" value="Submit">
+                          </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer id = "footer-layout">
+                <p> &copy; 
+                    <a href="dcu.ie/">DCU 2019-2020</a>
+                    <span class="footer-separator">&middot;</span>
+                    <span class="footer-text">Aderibigbe Oluwaseun</span> <span class="footer-separator">&middot;</span> 
+                    <span class="footer-text">CA106 Web Design</span> <span class="footer-separator"> &middot; </span> 
+                    <span class="footer-text"> Lecturer: <a href="http://www.computing.dcu.ie/~jkernan"> Jane Kernan </a></span>
+                    <span class="footer-separator">&middot;</span> <span class="footer-text">
+                    <a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service" >Valid HTML</a><br/>
+                    <a href="home.html">Top</a>
+
+
+                </span>
+                </p>
+        <!-- Note that the link to the validator above will only produce results when your page is uploaded to the server, and you click on the link from the browser.-->
+         
+        </footer>
+    </main>
+</body>
+
+</html>
