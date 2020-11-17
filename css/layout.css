@@ -25,19 +25,17 @@ body {
 
 /* Ending style of header */
 
-
 /* Starting style of Nav bar section*/
 /* W3SCHOOLS */
 .page-nav {
   background-color: rgb(124, 124, 124);
-  border-right: 1px solid #bbb;
 }
 
 .page-nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .page-nav ul li {
@@ -91,6 +89,25 @@ p {
   font-weight: 100;
 }
 
+.image-gallery {
+  overflow: hidden;
+  float: left;
+}
+.image-gallery .an-image {
+  width: 50%;
+  height:50% ;
+
+}
+
+.image-gallery .an-image img {
+  width: 100%;
+}
+
+image-gallery .an-image .image-caption p{
+  width: 100%;
+  float: right;
+}
+
 /* Form section*/
 
 label {
@@ -105,7 +122,6 @@ select {
   border-radius: 4px;
   border: none;
   font-size: 16px;
-
 }
 
 input[type="email"],
@@ -136,9 +152,8 @@ input[type="submit"] {
   cursor: pointer;
   width: 100%;
   padding: 2% 1%;
-  font-family: 'Arial';
+  font-family: "Arial";
   font-size: 20px;
-
 }
 
 * {
@@ -149,10 +164,8 @@ input[type="submit"]:hover {
   background-color: #45a049;
 }
 
-
 /* Footer */
-.footer{
-  
+.footer {
   text-align: center;
   background-color: rgb(124, 124, 124);
   margin-top: 20px;
@@ -169,16 +182,14 @@ footer a {
   color: white;
   text-align: center;
   text-decoration: none;
-  list-style-type: none; 
+  list-style-type: none;
 }
 
 footer a:hover:not(.active) {
-    background-color: #111;
+  background-color: #111;
 }
 
-
 @media screen and (max-width: 600px) {
-
   .page-nav .left,
   .page-nav ul li {
     float: none;
