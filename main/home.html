@@ -19,21 +19,25 @@ include a style for these classes you should remove the class from your html fil
 <body>
     <main class="main-style">
         <header class="page-header">
-            <!-- What does the header do? Replace this comment with a brief explanation. 
-         see nav above-->
-            <div class="header-content">
-                <!-- What is a div?  Replace this comment with an explanation.-->
-                <a href="#">
-                    <h1>Blogforoluwaseun</h1>
+            <!-- What does the header do? 
+                The header represents a container for introductory content or a set of navigational links.
+        -->
+            <div>
+                <!--<div> does not convey any meaning, aside from any found in its class,
+                     lang and title attributes.
+                    Does not define a section in HTML.
+                    -->
+                <a href="#home">
+                    <h1>Blogforoluwaseun.com</h1>
                 </a>
             </div>
         </header>
         <!-- You could style Main here if you wish-->
-        <nav class="page-nav">
+        <nav class="page-nav topnav">
             <!-- the navigation part of the page.  Note links just jump to different parts of the page.-->
             <ul>
-                <li id="right"><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
+                <li class="left"><a href="#home">Home</a></li>
+                <li ><a href="#about">About Me</a></li>
                 <li><a href="#work">Work Experience</a></li>
                 <li><a href="#images">Image Gallery</a></li>
                 <li><a href="#contact">Contact Me</a></li>
@@ -41,12 +45,15 @@ include a style for these classes you should remove the class from your html fil
         </nav>
 
         <!--Note here the use of an ID.  the link above actually links to this. 
-         It's a good example of where an ID can be used.  Note also that the section has a class attribute.  use this for styling. -->
-        <section id="about" class="about-me container">
-            <!--What does the section do here?  Replace this comment with a brief explanation. -->
+         It's a good example of where an ID can be used.  
+         Note also that the section has a class attribute.  use this for styling. -->
+        <section id="about" class="container">
+            <!--
+                means that the content inside is grouped (i.e. relates to a single theme), 
+                and should appear as an entry in an outline of the page. -->
             <div class="container-content">
                 <h2>About Me</h2>
-                <div class="content">
+                <div>
                     <p>
                         I’m Aderibigbe Oluwaseun and I was born on the 19th of August
                         1988.
@@ -73,10 +80,10 @@ include a style for these classes you should remove the class from your html fil
             </div>
         </section>
 
-        <section id="work" class="work-experience container">
+        <section id="work" class="container">
             <div class="container-content">
                 <h2>Work Experience</h2>
-                <div class="content">
+                <div>
                     <p>
                         Complete knowledge of computer hardware technology skilled in
                         installing, maintaining, and supporting IT equipment. <br />
@@ -108,16 +115,13 @@ include a style for these classes you should remove the class from your html fil
                         <p> Ahmed Informations Center,Tripoli/Libya. <br>
                             Computer Hardware Technician </p>
                         <p>
-                            Provided maintenance services to clients Installed software
-                            necessary for hardware maintenance.
-                            <br> 
-                            Suggested and provided nformation to clients on upgrading computer systems.
-                            <br>
+                            Provided maintenance services to clients. <br>
+                            Installed software necessary for hardware maintenance. <br>
+                            Suggested and provided nformation to clients on upgrading computer systems. <br>
                             Stayed current with the emerging computer hardware technology and
                             resolved computer operating systems problems. <br>
                             Answered calls and guided clients on fixing minor problems like installing new IT
-                            systems, upgrading existing hardware and software
-
+                            systems, upgrading existing hardware and software.
                         </p>
 
                     </p>
@@ -155,46 +159,50 @@ include a style for these classes you should remove the class from your html fil
                 </div>
             </div>
         </section>
+
         <section id="contact" class="container">
             <div class="container-content">
                 <h2>Contact Me</h2>
-                <div class="content">
+                <div>
                     <form>
                         <!-- Style this nicely.  
                             Don't worry if the form doesn't work, marks here for how well you style it. -->
-                        <div class="row">
-                            <div class="col-25">
-                                <label for="fname">First Name</label>
-                            </div>
-                            <div class="col-75">
-                                <input type="text" id="fname" name="firstname" placeholder="Your name.." />
-                            </div>
+
+                        <div>
+                            <label for="fname">Name</label>
                         </div>
-                        <div class="row">
-                            <div class="col-25">
-                                <label for="lname">Last Name</label>
-                            </div>
-                            <div class="col-75">
-                                <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
-                            </div>
+                        <div>
+                            <input type="text" id="fname" name="name" placeholder="Your name.." />
                         </div>
-                        <div class="row">
-                            <div class="col-25">
-                                <label for="subject">Subject</label>
-                            </div>
-                            <div class="col-75">
-                                <textarea id="subject" name="subject" placeholder="Write something.."
-                                    style="height: 200px"></textarea>
-                            </div>
+
+                        <div>
+                            <label for="lemail">Email</label>
                         </div>
-                        <div class="row">
+                        <div>
+                            <input type="email" id="lemail" name="email" placeholder="Your Email.." />
+                        </div>
+
+                        <div>
+                            <label for="message">Message</label>
+                        </div>
+                        <div>
+                            <textarea id="message" name="message" placeholder="Write something..">
+
+                            </textarea>
+                        </div>
+
+                        <div>
                             <input type="submit" value="Submit" />
                         </div>
-                    </form>
                 </div>
+                </form>
+
+
+            </div>
             </div>
         </section>
-        <footer id="footer-layout">
+
+        <footer id="footer-layout" class="footer">
             <p>
                 &copy;
                 <a href="dcu.ie/">DCU 2019-2020</a>
