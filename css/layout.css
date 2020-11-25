@@ -91,14 +91,13 @@ p {
 /* Here is the image section*/
 .image-gallery .an-image {
   padding: 2%;
-  width: 70%;
   overflow: hidden;
   height: auto;
   }
 
-/* Here is resizing the Image*/
+/* Here resizing the Image*/
 .image-gallery .an-image img {
-  width: 70%;
+  width: 50%;
   overflow: hidden;
   height: auto;
 }
