@@ -1,7 +1,6 @@
 body {
   background: rgb(215, 241, 213);
   margin: 0% auto;
-  padding: 0% auto;
 }
 
 /*Main page*/
@@ -11,6 +10,7 @@ body {
 }
 
 /*Starting style  of Header */
+
 .page-header a h1 {
   text-align: center;
   color: #111;
@@ -25,8 +25,9 @@ body {
 
 /* Ending style of header */
 
-/* Starting style of Nav bar section*/
-/* W3SCHOOLS */
+/* Starting style of Nav bar section */
+/* Got this nav bar from w3school.com */
+
 .page-nav {
   background-color: rgb(124, 124, 124);
 }
@@ -43,6 +44,7 @@ body {
   border-right: 1px solid #bbb;
 }
 
+/* I moved the Home nav to the left */
 .page-nav .left {
   float: left;
 }
@@ -59,18 +61,13 @@ body {
   background-color: #111;
 }
 
-/*Nav of home nav on the left*/
-#left {
-  float: left;
-}
-
 /* Ending style of Nav-bar section*/
 
-/**/
+/*  */
 
 .container {
   border-radius: 20px;
-  padding: 20px;
+  padding: 1%;
 }
 
 .container-content {
@@ -79,34 +76,38 @@ body {
   color: #111;
 }
 
+/**/
 .container-content h2 {
   font-size: 1.5em;
-  /* 30px/16=1.875em */
 }
 
+/*Size of text*/
 p {
   font-family: "Times New Roman", Times, serif;
   font-weight: 100;
 }
 
-.image-gallery {
-  overflow: hidden;
-  float: left;
-}
+
+/* Here is the image section*/
 .image-gallery .an-image {
-  width: 50%;
-  height:50% ;
+  padding: 2%;
+  width: 70%;
+  overflow: hidden;
+  height: auto;
+  }
 
-}
-
+/* Here is resizing the Image*/
 .image-gallery .an-image img {
-  width: 100%;
+  width: 70%;
+  overflow: hidden;
+  height: auto;
 }
 
-image-gallery .an-image .image-caption p{
-  width: 100%;
-  float: right;
+.image-gallery .an-image .image-caption{
+  overflow: hidden;
+  width: 70%;
 }
+/* End of the image section*/
 
 /* Form section*/
 
@@ -164,20 +165,19 @@ input[type="submit"]:hover {
   background-color: #45a049;
 }
 
-/* Footer */
+/* Form section ends */
+
+/* Footer  Section begin*/
 .footer {
   text-align: center;
   background-color: rgb(124, 124, 124);
-  margin-top: 20px;
-  margin: 0;
-  padding: 0;
   overflow: hidden;
 }
 
 .footer-text {
   color: rgb(255, 255, 255);
 }
-
+/**/
 footer a {
   color: white;
   text-align: center;
@@ -189,7 +189,11 @@ footer a:hover:not(.active) {
   background-color: #111;
 }
 
+/*End of the footer */
+
+/* Making the Nav bar goes vertical, if the screen is resized */
 @media screen and (max-width: 600px) {
+
   .page-nav .left,
   .page-nav ul li {
     float: none;
